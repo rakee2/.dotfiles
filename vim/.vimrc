@@ -38,6 +38,39 @@ set encoding=UTF-8
 set history=500
 set autoread
 
+" ================ Vim-Plug Plugins ================
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+Plug 'jremmen/vim-ripgrep'
+Plug 'tpope/vim-fugitive'
+Plug 'leafgarland/typescript-vim'
+Plug 'vim-utils/vim-man'
+"Plug 'lyuts/vim-rtags'
+Plug 'https://git::@github.com/ctrlpvim/ctrlp.vim'
+Plug 'mbbill/undotree'
+Plug 'mattn/emmet-vim'
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+            \ Plug 'ryanoasis/vim-devicons' |
+            \ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'https://github.com/airblade/vim-gitgutter.git'
+Plug 'https://github.com/itchyny/lightline.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'dense-analysis/ale'
+Plug 'https://git::@github.com/tpope/vim-fugitive.git'
+Plug 'arcticicestudio/nord-vim'
+Plug 'zxqfl/tabnine-vim'
+Plug 'vifm/vifm.vim'
+Plug 'ap/vim-css-color'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'christoomey/vim-system-copy'
+Plug 'easymotion/vim-easymotion'
+Plug 'jiangmiao/auto-pairs'
+
+call plug#end()
+
+
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
@@ -84,39 +117,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 " Terminal
 "set terminalwinsize=10*10
 noremap <Leader>t :terminal<Enter>
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'morhetz/gruvbox'
-Plug 'jremmen/vim-ripgrep'
-Plug 'tpope/vim-fugitive'
-Plug 'leafgarland/typescript-vim'
-Plug 'vim-utils/vim-man'
-"Plug 'lyuts/vim-rtags'
-Plug 'https://git::@github.com/ctrlpvim/ctrlp.vim'
-Plug 'mbbill/undotree'
-Plug 'mattn/emmet-vim'
-Plug 'preservim/nerdtree' |
-            \ Plug 'Xuyuanp/nerdtree-git-plugin' |
-            \ Plug 'ryanoasis/vim-devicons' |
-            \ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-Plug 'https://github.com/airblade/vim-gitgutter.git'
-Plug 'https://github.com/itchyny/lightline.vim'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'dense-analysis/ale'
-Plug 'https://git::@github.com/tpope/vim-fugitive.git'
-Plug 'arcticicestudio/nord-vim'
-Plug 'zxqfl/tabnine-vim'
-Plug 'vifm/vifm.vim'
-Plug 'ap/vim-css-color'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'christoomey/vim-system-copy'
-Plug 'easymotion/vim-easymotion'
-Plug 'jiangmiao/auto-pairs'
-
-call plug#end()
-
 
 " Colorscheme
 colorscheme nord
