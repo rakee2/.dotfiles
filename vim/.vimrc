@@ -25,7 +25,7 @@ set smartindent
 set nu rnu
 set number relativenumber
 set nowrap
-set smartcase
+set ignorecase
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
@@ -33,6 +33,9 @@ set undofile
 set incsearch
 set encoding=UTF-8
 set history=500
+set noswapfile
+set nobackup
+set nowb
 set autoread
 
 " ================ Environement Variables ==========
@@ -43,39 +46,82 @@ let $MYVIMRC="$HOME/.vimrc"
 command! Vimrc execute ":e $MYVIMRC" 
 command! Bashrc execute ":e $MYBASHRC" 
 
-" ================ Vim-Plug Plugins ================
+" ================ Custom Keymaps ==================
+nnoremap <Leader>e :Vifm<CR>
+nnoremap <Leader>t :tabnew<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>cc :Vimrc<CR>
+
+" ================ Plugins ========================
 call plug#begin('~/.vim/plugged')
 
+" --- Colorschemes ---
 Plug 'morhetz/gruvbox'
-Plug 'jremmen/vim-ripgrep'
-Plug 'tpope/vim-fugitive'
-Plug 'leafgarland/typescript-vim'
-Plug 'vim-utils/vim-man'
-"Plug 'lyuts/vim-rtags'
-Plug 'https://git::@github.com/ctrlpvim/ctrlp.vim'
-Plug 'mbbill/undotree'
-Plug 'mattn/emmet-vim'
+Plug 'arcticicestudio/nord-vim'
+
+" --- Bar ---
+Plug 'https://github.com/itchyny/lightline.vim'
+
+" Indent Lines
+Plug 'Yggdroot/indentLine'
+
+" --- Other Appearance Tweaks ---
+Plug 'ap/vim-css-color'
+Plug 'kien/rainbow_parentheses.vim'
+
+" --- File Explorers / File Tree ---
+Plug 'vifm/vifm.vim'
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
             \ Plug 'ryanoasis/vim-devicons' |
             \ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'https://github.com/airblade/vim-gitgutter.git'
-Plug 'https://github.com/itchyny/lightline.vim'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'dense-analysis/ale'
-Plug 'https://git::@github.com/tpope/vim-fugitive.git'
-Plug 'arcticicestudio/nord-vim'
-Plug 'zxqfl/tabnine-vim'
-Plug 'vifm/vifm.vim'
-Plug 'ap/vim-css-color'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'christoomey/vim-system-copy'
-Plug 'easymotion/vim-easymotion'
-Plug 'jiangmiao/auto-pairs'
+
+" --- File Finders ---
+Plug 'jremmen/vim-ripgrep'
 Plug 'junegunn/fzf.vim'
+Plug 'https://git::@github.com/ctrlpvim/ctrlp.vim'
+
+" --- Autocompletion 
+Plug 'zxqfl/tabnine-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
+
+" --- Syntax ---
+Plug 'dense-analysis/ale'
+Plug 'leafgarland/typescript-vim'
+
+" --- Git ---
+Plug 'tpope/vim-fugitive'
+Plug 'https://github.com/airblade/vim-gitgutter.git'
+Plug 'mbbill/undotree'
+
+" --- Manual Pages ---
+Plug 'vim-utils/vim-man'
+
+" --- Multiple Cursors ---
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
+" --- Movement --
+Plug 'easymotion/vim-easymotion'
+
+" --- Unix Shell Commands
+Plug 'tpope/vim-eunuch'
+
+" --- Terminal ---
+Plug 'skywind3000/vim-terminal-help'
+
+" --- Notes & Wiki ---
+Plug 'vimwiki/vimwiki'
+
+" --- Discord Rich Presence ---
+Plug 'hugolgst/vimsence'
+
+" --- Disabled --
+"Plug 'lyuts/vim-rtags'
+"Plug 'christoomey/vim-system-copy'
 
 call plug#end()
-
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
@@ -86,27 +132,22 @@ call plug#end()
        set undofile
        endif
 
-" ================ Turn Off Swap Files ==============
- set noswapfile
- set nobackup
- set nowb
-
-" LightLine 
+" ================ LightLine =================
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
 set laststatus=2
 
-" NerdTree
+" ================ NerdTree  =================
 let NERDTreeQuitOnOpen = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+let NERDTreeShowHidden = 1
 
-" Toggle NerdTree
-nnoremap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <Leader>f :NERDTreeToggle<CR>
 
-" nerdtree-git-plugin
+" --- nerdtree-git-plugin ---
 let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'✹',
                 \ 'Staged'    :'✚',
@@ -120,10 +161,21 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 
-" Terminal
-set terminalwinsize=10*10
-noremap <Leader>t :terminal<Enter>
+" --- vim-devicons ---
+
+" ================ Terminal  =================
+let g:terminal_key = "<Leader>c"
+let g:terminal_cwd = 1
+let g:terminal_height = 10
+let g:terminal_pos = "rightbelow"
+let g:terminal_shell = "bash"
+let g:terminal_edit = "tab drop"
+let g:terminal_kill = "term"
+let g:terminal_list = 0
+let g:terminal_fixheight = 1
+let g:terminal_close = 0
 
 " ================ Colorscheme =================
 colorscheme nord
+colorscheme gruvbox
 
