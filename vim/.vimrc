@@ -15,9 +15,6 @@
 "        'V/'   ++++++
 "                 ++
 
-" Goto .vimrc by :Config
-command! Config execute ":e $MYVIMRC" 
-
 syntax on
 
 set noerrorbells
@@ -37,6 +34,14 @@ set incsearch
 set encoding=UTF-8
 set history=500
 set autoread
+
+" ================ Environement Variables ==========
+let $MYBASHRC="$HOME/.bashrc"
+let $MYVIMRC="$HOME/.vimrc"
+
+" ================ Custom Commands =================
+command! Vimrc execute ":e $MYVIMRC" 
+command! Bashrc execute ":e $MYBASHRC" 
 
 " ================ Vim-Plug Plugins ================
 call plug#begin('~/.vim/plugged')
@@ -74,7 +79,7 @@ call plug#end()
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
-" Only works all the time.
+
  if has('persistent_undo')
    silent !mkdir ~/.vim/backups > /dev/null 2>&1
      set undodir=~/.vim/backups
@@ -116,8 +121,9 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ }
 
 " Terminal
-"set terminalwinsize=10*10
+set terminalwinsize=10*10
 noremap <Leader>t :terminal<Enter>
 
-" Colorscheme
+" ================ Colorscheme =================
 colorscheme nord
+
