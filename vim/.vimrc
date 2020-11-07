@@ -45,11 +45,12 @@ let $MYVIMRC="$HOME/.vimrc"
 " ================ Custom Commands =================
 command! Vimrc execute ":e $MYVIMRC" 
 command! Bashrc execute ":e $MYBASHRC" 
-
+image
 " ================ Custom Keymaps ==================
 nnoremap <Leader>e :Vifm<CR>
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>w :w<CR>
 
 " ================ Plugins ========================
 call plug#begin('~/.vim/plugged')
@@ -61,7 +62,7 @@ Plug 'arcticicestudio/nord-vim'
 " --- Bar ---
 Plug 'https://github.com/itchyny/lightline.vim'
 
-" Indent Lines
+" --- Indent Lines ---
 Plug 'Yggdroot/indentLine'
 
 " --- Other Appearance Tweaks ---
@@ -156,9 +157,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 
-" --- vim-devicons ---
-
-" ================ Terminal  =================
+" ================ Terminal ===================
 let g:terminal_key = "<Leader>c"
 let g:terminal_cwd = 1
 let g:terminal_height = 10
@@ -169,6 +168,10 @@ let g:terminal_kill = "term"
 let g:terminal_list = 0
 let g:terminal_fixheight = 1
 let g:terminal_close = 0
+
+" ================ IndentLine ==================
+let g:indentLine_setColors = 1
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " ================ Colorscheme =================
 colorscheme nord
