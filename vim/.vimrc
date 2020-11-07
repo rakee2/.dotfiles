@@ -50,7 +50,6 @@ command! Bashrc execute ":e $MYBASHRC"
 nnoremap <Leader>e :Vifm<CR>
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>cc :Vimrc<CR>
 
 " ================ Plugins ========================
 call plug#begin('~/.vim/plugged')
@@ -111,15 +110,11 @@ Plug 'tpope/vim-eunuch'
 " --- Terminal ---
 Plug 'skywind3000/vim-terminal-help'
 
-" --- Notes & Wiki ---
-Plug 'vimwiki/vimwiki'
-
-" --- Discord Rich Presence ---
-Plug 'hugolgst/vimsence'
-
 " --- Disabled --
 "Plug 'lyuts/vim-rtags'
 "Plug 'christoomey/vim-system-copy'
+"Plug 'vimwiki/vimwiki'
+"Plug 'hugolgst/vimsence'
 
 call plug#end()
 
