@@ -1,19 +1,14 @@
 "
-"       ________ ++     ________
-"      /VVVVVVVV\++++  /VVVVVVVV\
-"      \VVVVVVVV/++++++\VVVVVVVV/
-"       |VVVVVV|++++++++/VVVVV/'
-"       |VVVVVV|++++++/VVVVV/'
-"      +|VVVVVV|++++/VVVVV/'+
-"    +++|VVVVVV|++/VVVVV/'+++++      
-"   +++++|VVVVVV|/VVVVV/'+++++++++  
-"     +++|VVVVVVVVVVV/'+++++++++        
-"       +|VVVVVVVVV/'+++++++++          
-"        |VVVVVVV/'+++++++++       
-"        |VVVVV/'+++++++++        
-"        |VVV/'+++++++++
-"        'V/'   ++++++
-"                 ++
+"         ██╗   ██╗ ██╗ ███╗   ███╗
+"    ██╗  ██║   ██║ ██║ ████╗ ████║
+"    ╚═╝  ██║   ██║ ██║ ██╔████╔██║
+"    ▄█╗  ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║
+"    ▀═╝   ╚████╔╝  ██║ ██║ ╚═╝ ██║
+"           ╚═══╝   ╚═╝ ╚═╝     ╚═╝
+"
+
+" Set Leader
+let mapleader = ";"
 
 syntax on
 
@@ -53,12 +48,20 @@ nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 
+map <Leader>h :wincmd h<CR>
+map <Leader>j :wincmd j<CR>
+map <Leader>k :wincmd k<CR>
+map <Leader>l :wincmd l<CR>
+
 " ================ Plugins ========================
 call plug#begin('~/.vim/plugged')
 
 " --- Colorschemes ---
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
+
+" --- Startpage ---
+Plug 'mhinz/vim-startify'
 
 " --- Bar ---
 Plug 'https://github.com/itchyny/lightline.vim'
@@ -83,7 +86,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'https://git::@github.com/ctrlpvim/ctrlp.vim'
 
 " --- Autocompletion 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'zxqfl/tabnine-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
@@ -109,6 +112,9 @@ Plug 'easymotion/vim-easymotion'
 " --- Terminal ---
 Plug 'skywind3000/vim-terminal-help'
 
+" --- Commenting ---
+Plug 'tpope/vim-commentary'
+
 " --- Disabled --
 "Plug 'lyuts/vim-rtags'
 "Plug 'christoomey/vim-system-copy'
@@ -116,6 +122,19 @@ Plug 'skywind3000/vim-terminal-help'
 "Plug 'hugolgst/vimsence'
 
 call plug#end()
+
+" ================ startify ========================
+
+let g:startify_custom_header = [
+            \'',
+            \'        ██╗   ██╗ ██╗ ███╗   ███╗',
+            \'   ██╗  ██║   ██║ ██║ ████╗ ████║',
+            \'   ╚═╝  ██║   ██║ ██║ ██╔████╔██║',
+            \'   ▄█╗  ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
+            \'   ▀═╝   ╚████╔╝  ██║ ██║ ╚═╝ ██║',
+            \'          ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
+            \'',
+            \ ]
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
