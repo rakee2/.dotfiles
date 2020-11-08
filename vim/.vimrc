@@ -18,7 +18,8 @@
 syntax on
 
 set noerrorbells
-set tabstop=4 softtabstop=4
+set tabstop=4 
+set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
@@ -45,7 +46,7 @@ let $MYVIMRC="$HOME/.vimrc"
 " ================ Custom Commands =================
 command! Vimrc execute ":e $MYVIMRC" 
 command! Bashrc execute ":e $MYBASHRC" 
-image
+
 " ================ Custom Keymaps ==================
 nnoremap <Leader>e :Vifm<CR>
 nnoremap <Leader>t :tabnew<CR>
@@ -82,8 +83,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'https://git::@github.com/ctrlpvim/ctrlp.vim'
 
 " --- Autocompletion 
-Plug 'zxqfl/tabnine-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'zxqfl/tabnine-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 
@@ -91,7 +92,7 @@ Plug 'mattn/emmet-vim'
 Plug 'dense-analysis/ale'
 Plug 'leafgarland/typescript-vim'
 
-" --- Git ---
+" --- Git --
 Plug 'tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'mbbill/undotree'
@@ -104,9 +105,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " --- Movement --
 Plug 'easymotion/vim-easymotion'
-
-" --- Unix Shell Commands
-Plug 'tpope/vim-eunuch'
 
 " --- Terminal ---
 Plug 'skywind3000/vim-terminal-help'
@@ -171,7 +169,7 @@ let g:terminal_close = 0
 
 " ================ IndentLine ==================
 let g:indentLine_setColors = 1
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " ================ Colorscheme =================
 colorscheme nord
