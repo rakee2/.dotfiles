@@ -10,57 +10,6 @@
 " Set Leader
 let mapleader = ";"
 
-syntax on
-
-set noerrorbells
-set tabstop=4 
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
-set nu rnu
-set number relativenumber
-set nowrap
-set ignorecase
-set noswapfile
-set nobackup
-set undodir=~/.vim/undodir
-set undofile
-set incsearch
-set encoding=UTF-8
-set history=500
-set noswapfile
-set nobackup
-set nowb
-set autoread
-
-" ================ Environement Variables ==========
-let $MYVIMRC="$HOME/.vimrc"
-let $MYBASHRC="$HOME/.bashrc"
-let $MYBSPWMRC="$HOME/.config/bspwm/bspwmrc"
-let $MYSXHKDRC="$HOME/.config/sxhkd/sxhkdrc"
-let $MYMUTTRC="$HOME/.config/neomutt/muttrc"
-let $MYCALCURSERC="$HOME/.config/calcurse/conf"
-
-" ================ Custom Commands =================
-command! Vimrc execute ":e $MYVIMRC" 
-command! Bashrc execute ":e $MYBASHRC" 
-command! Bspwmrc execute ":e $MYBSPWMRC" 
-command! Sxhkdrc execute ":e $MYSXHKDRC" 
-command! Muttrc execute ":e $MYMUTTRC" 
-command! Calcurserc execute ":e $MYCALCURSERC" 
-
-" ================ Custom Keymaps ==================
-nnoremap <Leader>e :Vifm<CR>
-nnoremap <Leader>t :tabnew<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>w :w<CR>
-
-map <Leader>h :wincmd h<CR>
-map <Leader>j :wincmd j<CR>
-map <Leader>k :wincmd k<CR>
-map <Leader>l :wincmd l<CR>
-
 " ================ Autoinstall vim-plug ============
 if empty(glob('~/.vim/autoload/plug.vim'))
       silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -118,9 +67,6 @@ Plug 'mbbill/undotree'
 " --- Manual Pages ---
 Plug 'vim-utils/vim-man'
 
-" --- Multiple Cursors ---
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-
 " --- Movement --
 Plug 'easymotion/vim-easymotion'
 
@@ -130,19 +76,79 @@ Plug 'skywind3000/vim-terminal-help'
 " --- Commenting ---
 Plug 'tpope/vim-commentary'
 
+" --- Focusing ---
+Plug 'junegunn/goyo.vim'
+
 " --- Experimental ---
 Plug 'itchyny/calendar.vim'
+Plug 'junegunn/limelight.vim'
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 
 " --- Disabled --
-"Plug 'lyuts/vim-rtags'
-"Plug 'christoomey/vim-system-copy'
-"Plug 'vimwiki/vimwiki'
-"Plug 'hugolgst/vimsence'
+" Plug 'lyuts/vim-rtags'
+" Plug 'christoomey/vim-system-copy'
+" Plug 'vimwiki/vimwiki'
+" Plug 'hugolgst/vimsence'
+" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
-" ================ startify ========================
+syntax on
 
+set noerrorbells
+set tabstop=4 
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nu rnu
+set number relativenumber
+set nowrap
+set ignorecase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set encoding=UTF-8
+set history=500
+set noswapfile
+set nobackup
+set nowb
+set autoread
+
+" ================ Environement Variables ==========
+let $MYVIMRC="$HOME/.vimrc"
+let $MYBASHRC="$HOME/.bashrc"
+let $MYBSPWMRC="$HOME/.config/bspwm/bspwmrc"
+let $MYSXHKDRC="$HOME/.config/sxhkd/sxhkdrc"
+let $MYMUTTRC="$HOME/.config/neomutt/muttrc"
+let $MYCALCURSERC="$HOME/.config/calcurse/conf"
+
+" ================ Custom Commands =================
+command! Vimrc execute ":e $MYVIMRC" 
+command! Bashrc execute ":e $MYBASHRC" 
+command! Bspwmrc execute ":e $MYBSPWMRC" 
+command! Sxhkdrc execute ":e $MYSXHKDRC" 
+command! Muttrc execute ":e $MYMUTTRC" 
+command! Calcurserc execute ":e $MYCALCURSERC" 
+
+" ================ Custom Keymaps ==================
+nnoremap <Leader>e :Vifm<CR>
+nnoremap <Leader>t :tabnew<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <C-G> :Goyo<CR>
+
+map <Leader>h :wincmd h<CR>
+map <Leader>j :wincmd j<CR>
+map <Leader>k :wincmd k<CR>
+map <Leader>l :wincmd l<CR>
+
+" ================ startify ========================
 let g:startify_custom_header = [
             \'',
             \'        ██╗   ██╗ ██╗ ███╗   ███╗',
@@ -206,11 +212,10 @@ let g:terminal_close = 0
 " ================ IndentLine ==================
 let g:indentLine_fileTypeExclude = ['startify']
 let g:indentLine_setColors = 1
+" Indent Line Chars: ['|', '¦', '┆', '┊', '▏', '⎸']
 let g:indentLine_char = '▏'
-"let g:indentLine_char = '⎸'
-"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " ================ Colorscheme =================
-colorscheme nord
 colorscheme gruvbox
+set background=dark
 
