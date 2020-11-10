@@ -35,12 +35,20 @@ set nowb
 set autoread
 
 " ================ Environement Variables ==========
-let $MYBASHRC="$HOME/.bashrc"
 let $MYVIMRC="$HOME/.vimrc"
+let $MYBASHRC="$HOME/.bashrc"
+let $MYBSPWMRC="$HOME/.config/bspwm/bspwmrc"
+let $MYSXHKDRC="$HOME/.config/sxhkd/sxhkdrc"
+let $MYMUTTRC="$HOME/.config/neomutt/muttrc"
+let $MYCALCURSERC="$HOME/.config/calcurse/conf"
 
 " ================ Custom Commands =================
 command! Vimrc execute ":e $MYVIMRC" 
 command! Bashrc execute ":e $MYBASHRC" 
+command! Bspwmrc execute ":e $MYBSPWMRC" 
+command! Sxhkdrc execute ":e $MYSXHKDRC" 
+command! Muttrc execute ":e $MYMUTTRC" 
+command! Calcurserc execute ":e $MYCALCURSERC" 
 
 " ================ Custom Keymaps ==================
 nnoremap <Leader>e :Vifm<CR>
@@ -72,6 +80,7 @@ Plug 'mhinz/vim-startify'
 
 " --- Bar ---
 Plug 'https://github.com/itchyny/lightline.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 " --- Indent Lines ---
 Plug 'Yggdroot/indentLine'
@@ -100,7 +109,6 @@ Plug 'mattn/emmet-vim'
 
 " --- Syntax ---
 Plug 'dense-analysis/ale'
-Plug 'leafgarland/typescript-vim'
 
 " --- Git --
 Plug 'tpope/vim-fugitive'
@@ -121,6 +129,9 @@ Plug 'skywind3000/vim-terminal-help'
 
 " --- Commenting ---
 Plug 'tpope/vim-commentary'
+
+" --- Experimental ---
+Plug 'itchyny/calendar.vim'
 
 " --- Disabled --
 "Plug 'lyuts/vim-rtags'
@@ -145,7 +156,6 @@ let g:startify_custom_header = [
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
-
  if has('persistent_undo')
    silent !mkdir ~/.vim/backups > /dev/null 2>&1
      set undodir=~/.vim/backups
@@ -154,7 +164,7 @@ let g:startify_custom_header = [
 
 " ================ LightLine =================
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'gruvbox',
       \ }
 set laststatus=2
 
@@ -194,7 +204,10 @@ let g:terminal_fixheight = 1
 let g:terminal_close = 0
 
 " ================ IndentLine ==================
+let g:indentLine_fileTypeExclude = ['startify']
 let g:indentLine_setColors = 1
+let g:indentLine_char = '▏'
+"let g:indentLine_char = '⎸'
 "let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " ================ Colorscheme =================
