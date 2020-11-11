@@ -211,9 +211,9 @@ let g:terminal_close = 0
 
 " ================ IndentLine ==================
 let g:indentLine_fileTypeExclude = ['startify']
-let g:indentLine_setColors = 1
+let g:indentLine_color_term = 240
 " Indent Line Chars: ['|', '¦', '┆', '┊', '▏', '⎸']
-let g:indentLine_char = '▏'
+let g:indentLine_char = '┆'
 
 " ================ Colorscheme =================
 colorscheme gruvbox
