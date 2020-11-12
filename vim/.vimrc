@@ -80,6 +80,7 @@ Plug 'tpope/vim-commentary'
 Plug 'junegunn/goyo.vim'
 
 " --- Experimental ---
+Plug 'szw/vim-maximizer'
 Plug 'itchyny/calendar.vim'
 Plug 'junegunn/limelight.vim'
 let g:limelight_conceal_ctermfg = 'gray'
