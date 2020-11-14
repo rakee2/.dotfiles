@@ -1,0 +1,9 @@
+# cd
+alias ..="cd .."
+alias cdp="cd /mnt/p"
+
+# ls
+alias ls="ls --color=auto"
+alias la="ls -la --color=auto"
+alias l.='ls -d .* --color=auto'
+

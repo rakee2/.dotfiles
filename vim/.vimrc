@@ -78,15 +78,11 @@ Plug 'tpope/vim-commentary'
 
 " --- Focusing ---
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 " --- Experimental ---
 Plug 'szw/vim-maximizer'
 Plug 'itchyny/calendar.vim'
-Plug 'junegunn/limelight.vim'
-let g:limelight_conceal_ctermfg = 'gray'
-let g:limelight_conceal_ctermfg = 240
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
 
 " --- Disabled --
 " Plug 'lyuts/vim-rtags'
@@ -143,6 +139,7 @@ nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <C-G> :Goyo<CR>
+nnoremap <Leader>m :MaximizerToggle<CR>
 
 map <Leader>h :wincmd h<CR>
 map <Leader>j :wincmd j<CR>
@@ -203,7 +200,7 @@ let g:terminal_key = "<Leader>c"
 let g:terminal_cwd = 1
 let g:terminal_height = 10
 let g:terminal_pos = "rightbelow"
-let g:terminal_shell = "bash"
+let g:terminal_shell = "zsh"
 let g:terminal_edit = "tab drop"
 let g:terminal_kill = "term"
 let g:terminal_list = 0
@@ -211,10 +208,17 @@ let g:terminal_fixheight = 1
 let g:terminal_close = 0
 
 " ================ IndentLine ==================
+let g:indentLine_setConceal = 0
 let g:indentLine_fileTypeExclude = ['startify']
 let g:indentLine_color_term = 240
 " Indent Line Chars: ['|', '¦', '┆', '┊', '▏', '⎸']
 let g:indentLine_char = '┆'
+
+" ================ LimeLight ==================
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 
 " ================ Colorscheme =================
 colorscheme gruvbox
