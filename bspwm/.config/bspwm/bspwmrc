@@ -21,7 +21,7 @@ bspc rule -a Screenkey manage=off
 #bspc monitor HDMI-1 -d 7 8 9
 
 # Set Wallpaper
-feh --bg-fill ~/Pictures/white-tree.jpg
+nitrogen --restore
 
 # Start Polybar
 bash ~/.config/polybar/launch.sh
@@ -29,6 +29,3 @@ bash ~/.config/polybar/launch.sh
 
 # Start Compositor
 compton -b --config ~/.config/compton/compton.conf
-
-# Start Spotifyd daemon
-#spotifyd
