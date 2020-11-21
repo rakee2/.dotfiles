@@ -7,3 +7,11 @@ alias ls="ls --color=auto"
 alias la="ls -la --color=auto"
 alias l.='ls -d .* --color=auto'
 
+# sudo / doas
+alias fg="doas !!"
+
+# text editor
+alias v="vim"
+
+# Portage
+alias semerge="emerge --search "

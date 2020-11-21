@@ -17,9 +17,9 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# Lauch Brave-Browser
-ctrl + b
-	brave-browser
+# Lauch Browser
+super + w
+	brave-bin
 
 # Launch Vim
 super + v
@@ -33,6 +33,9 @@ super + q
 Print
     flameshot gui
 
+    # inport -window root ~/Pictures/screenshot.png
+      # scrot '%Y-%m-%d-%s\_$wx$h\_scrot.png' -e 'mv $f \~/Screenshots/ \&amp; feh -.d \~/Screenshots/$f'
+
 #
 # bspwm hotkeys
 #
@@ -42,7 +45,7 @@ super + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-super + {_,shift + }w
+super + {_,shift + }BackSpace
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout

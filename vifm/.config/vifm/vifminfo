@@ -6,19 +6,19 @@
 	..
 1604770522
 'b
-	/root/bin/
+	/home/krissemicolon/bin/
 	..
-1604770522
+1605472857
 'h
-	/root/
+	/home/krissemicolon/
 	..
-1604770522
+1605472857
 
 # Bookmarks:
 
 # TUI:
 al
-q1
+q0
 v2
 ov
 m-1
@@ -26,129 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
 d/lost+found
 	..
 0
@@ -326,6 +203,129 @@ d/root/.dotfiles
 d/root
 	.p10k.zsh
 22
+d/
+	home
+4
+d/home
+	krissemicolon
+1
+d/home/krissemicolon
+	Projects
+11
+d/home/krissemicolon/Projects
+	dehashr
+1
+d/home/krissemicolon/Projects/dehashr
+	src
+2
+d/home/krissemicolon/Projects/dehashr/src
+	types
+1
+d/home/krissemicolon/Projects/dehashr
+	src
+2
+d/home/krissemicolon/Projects/dehashr/src
+	types
+1
+d/home/krissemicolon/Projects/dehashr
+	src
+2
+d/home/krissemicolon/Projects
+	dehashr
+1
+d/home/krissemicolon
+	Projects
+13
+d/home
+	krissemicolon
+1
+d/
+	home
+4
+d/home
+	krissemicolon
+1
+d/home/krissemicolon
+	Applications
+10
+d/home/krissemicolon/Applications
+	..
+0
+d/home/krissemicolon
+	Pictures
+12
+d/home/krissemicolon/Pictures
+	..
+0
+d/home/krissemicolon
+	Pictures
+12
+d/home/krissemicolon/Pictures
+	background.png
+4
+d/home/krissemicolon
+	Pictures
+12
+d/home/krissemicolon/Pictures
+	background2.png
+5
+d/home/krissemicolon
+	Pictures
+12
+d/home/krissemicolon/Pictures
+	907212642.png
+1
+d/home/krissemicolon
+	Pictures
+12
+d/home/krissemicolon/Projects/dehashr/src
+	a.out
+2
+d/home/krissemicolon/Projects/dehashr
+	src
+2
+d/home/krissemicolon/Projects
+	dehashr
+1
+d/home/krissemicolon/Projects/dehashr
+	src
+2
+d/home/krissemicolon/Projects/dehashr/src
+	types
+1
+d/home/krissemicolon/Projects/dehashr/src/types
+	sha256.c
+1
+d/home/krissemicolon/Projects/dehashr/src
+	types
+1
+d/home/krissemicolon/Projects/dehashr
+	src
+2
+d/home/krissemicolon/Projects
+	dehashr
+1
+d/home/krissemicolon
+	Downloads
+17
+d/home/krissemicolon/Downloads
+	tor-browser_en-US
+1
+d/home/krissemicolon/Downloads/tor-browser_en-US
+	Browser
+1
+d/home/krissemicolon/Downloads
+	C2.pdf
+2
+d/home/krissemicolon/Pictures
+	1602613676757.jpg
+3
+d/home/krissemicolon/.local/share/Steam/steamapps/common/Among Us
+	Among Us.exe
+2
+d/home/krissemicolon/.cache/mutt-wizard/files
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -363,6 +363,9 @@ D/mnt/c/Users/Kris
 	Documents
 8
 D/mnt/c/Users/Kris/Documents
+	..
+0
+D/mnt
 	..
 0
 D

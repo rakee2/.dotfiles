@@ -116,13 +116,13 @@
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color. os color
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=013
+  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=
   # Make the icon bold.
   typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='${P9K_CONTENT}'
 
   ################################[ prompt_char: prompt symbol ]################################
   # Green prompt symbol if the last command succeeded. prompt_char color
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=003
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=015
   # Red prompt symbol if the last command failed.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=001
   # Default prompt symbol.
@@ -141,7 +141,7 @@
 
   ##################################[ dir: current directory ]##################################
   # Default current directory color. dir color
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=015
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=012
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
