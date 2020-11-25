@@ -18,7 +18,7 @@
 
 # TUI:
 al
-q0
+q1
 v2
 ov
 m-1
@@ -26,27 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
-d/
-	lost+found
-9
-d/lost+found
-	..
-0
 d/
 	lib32
 6
@@ -326,6 +305,27 @@ d/home/krissemicolon/.local/share/Steam/steamapps/common/Among Us
 d/home/krissemicolon/.cache/mutt-wizard/files
 	..
 0
+d/etc/X11
+	Sessions
+1
+d/etc/X11/Sessions
+	Xsession
+1
+d/etc/X11
+	Sessions
+1
+d/etc
+	dbus-1
+4
+d/home/krissemicolon/Projects/dehashr
+	src
+2
+d/home/krissemicolon/Projects
+	dehashr
+1
+d/home/krissemicolon
+	Projects
+19
 d
 
 # Right window history (oldest to newest):

@@ -116,6 +116,7 @@ set noswapfile
 set nobackup
 set nowb
 set autoread
+set fillchars+=vert:\▏
 
 " ================ Environement Variables ==========
 let $MYVIMRC="$HOME/.vimrc"
