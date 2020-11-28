@@ -46,6 +46,12 @@ XF86AudioMute
 XF86AudioRaiseVolume
     amixer -c 0 set Master 2%+
 
+# Brightness Control
+XF86MonBrightnessUp
+    xbacklight -inc 20
+
+XF86MonBrightnessDown
+    xbacklight -dec 20
 
 #
 # bspwm hotkeys
