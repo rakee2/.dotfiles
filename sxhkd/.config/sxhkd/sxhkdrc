@@ -36,6 +36,17 @@ Print
     # inport -window root ~/Pictures/screenshot.png
       # scrot '%Y-%m-%d-%s\_$wx$h\_scrot.png' -e 'mv $f \~/Screenshots/ \&amp; feh -.d \~/Screenshots/$f'
 
+# Audio Volume Control
+XF86AudioLowerVolume
+    amixer -c 0 set Master 2%-
+
+XF86AudioMute
+    amixer -c 0 set Master toggle
+
+XF86AudioRaiseVolume
+    amixer -c 0 set Master 2%+
+
+
 #
 # bspwm hotkeys
 #
