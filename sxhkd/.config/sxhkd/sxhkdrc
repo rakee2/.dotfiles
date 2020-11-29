@@ -38,13 +38,13 @@ Print
 
 # Audio Volume Control
 XF86AudioLowerVolume
-    amixer -c 0 set Master 2%-
+    amixer -c 0 set Master 1%-
 
 XF86AudioMute
     amixer -c 0 set Master toggle
 
 XF86AudioRaiseVolume
-    amixer -c 0 set Master 2%+
+    amixer -c 0 set Master 1%+
 
 # Brightness Control
 XF86MonBrightnessUp

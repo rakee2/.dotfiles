@@ -91,4 +91,4 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 
 # Variables
-export BW_SESSION="hxVyB7P4Byn1GxibKWDexCVGl+eKPtpAUi0P2AgKk5Rzzg2AVEJC8lkztG6fHR74lqJqy1QbiBzWoSx0lgQLAg=="
+export PATH="/home/krissemicolon/.cargo/bin"
