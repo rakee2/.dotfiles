@@ -20,7 +20,14 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-# Monitors
+# Monitor Setup
+# if [ -x extmonitor.sh ];then
+#     monitor-setup.sh
+# else
+#     bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+#     bash ~/.config/polybar/launch.sh
+# fi
+
 # bspc monitor -d I II III IV V VI VII VIII IX X
 bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 
@@ -32,7 +39,8 @@ bash ~/.config/polybar/launch.sh
 #polybar example
 
 # Start Compositor
-compton -b --config ~/.config/compton/compton.conf
+# compton -b --config ~/.config/compton/compton.conf
+# picom --config ~/Applications/picom/picom.sample.conf
 
 # Start Notification Daemon
 dunst &

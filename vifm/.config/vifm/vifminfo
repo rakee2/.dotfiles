@@ -2,9 +2,9 @@
 
 # Marks:
 'H
-	/root/
-	..
-1604770522
+	/home/krissemicolon/Projects/learnC
+	main.c
+1606834945
 'b
 	/home/krissemicolon/bin/
 	..
@@ -12,7 +12,11 @@
 'h
 	/home/krissemicolon/
 	..
-1605472857
+1606836144
+'m
+	/home/krissemicolon/Projects/learnC
+	main.c
+1606834940
 
 # Bookmarks:
 
@@ -26,213 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/
-	lib32
-6
-d/lib32
-	..
-0
-d/
-	root
-14
-d/root
-	.dotfiles
-5
-d/root/.dotfiles
-	zsh
-14
-d/root/.dotfiles/zsh
-	.zshrc
-1
-d/root/.dotfiles
-	zsh
-14
-d/root
-	.config
-6
-d/root/.config
-	user-dirs.dirs
-26
-d/root
-	.dotfiles
-4
-d/root/.dotfiles
-	zsh
-14
-d/root/.dotfiles/zsh
-	.p10k.zsh
-1
-d/root/.dotfiles
-	vifm
-12
-d/root
-	.config
-5
-d/root/.config
-	QtProject.conf
-25
-d/root
-	.dotfiles
-7
-d/root/.dotfiles
-	zsh
-14
-d/root/.dotfiles/zsh
-	.config
-1
-d/root/.dotfiles/zsh/.config
-	..
-0
-d/root/.dotfiles/zsh
-	.config
-1
-d/root/.dotfiles
-	alias
-3
-d/root/.dotfiles/alias
-	..
-0
-d/root/.dotfiles
-	vifm
-12
-d/root/.dotfiles/vifm
-	.config
-1
-d/root/.dotfiles/vifm/.config
-	vifm
-1
-d/root/.dotfiles/vifm/.config/vifm
-	vifmrc
-1
-d/root/.dotfiles/vifm/.config
-	vifm
-1
-d/root/.dotfiles/vifm
-	.config
-1
-d/root/.dotfiles
-	zsh
-14
-d/root/.dotfiles/zsh
-	.config
-1
-d/root/.dotfiles/zsh/.config
-	.config
-1
-d/root/.dotfiles/zsh/.config/.config
-	.aliasrc
-1
-d/root/.dotfiles/zsh/.config
-	.config
-1
-d/root/.dotfiles/zsh
-	.config
-1
-d/root/.dotfiles/zsh/.config
-	.aliasrc
-1
-d/root/.dotfiles/zsh
-	.config
-1
-d/root/.dotfiles
-	polybar
-9
-d/root
-	.dotfiles
-7
-d/root/.dotfiles
-	vifm
-12
-d/root/.dotfiles/vifm
-	.config
-1
-d/root/.dotfiles/vifm/.config
-	vifm
-1
-d/root/.dotfiles/vifm/.config/vifm
-	vifmrc
-1
-d/root/.dotfiles/vifm/.config
-	vifm
-1
-d/root/.dotfiles/vifm
-	.config
-1
-d/root/.dotfiles
-	vifm
-12
-d/root
-	.dotfiles
-7
-d/root/.dotfiles
-	zsh
-14
-d/root/.dotfiles/zsh
-	.config
-1
-d/root/.dotfiles/zsh/.config
-	.aliasrc
-1
-d/root/.dotfiles/zsh
-	.p10k.zsh
-2
-d/root/.dotfiles
-	zsh
-14
-d/root
-	.p10k.zsh
-22
-d/
-	home
-4
-d/home
-	krissemicolon
-1
-d/home/krissemicolon
-	Projects
-11
-d/home/krissemicolon/Projects
-	dehashr
-1
-d/home/krissemicolon/Projects/dehashr
-	src
-2
-d/home/krissemicolon/Projects/dehashr/src
-	types
-1
-d/home/krissemicolon/Projects/dehashr
-	src
-2
-d/home/krissemicolon/Projects/dehashr/src
-	types
-1
-d/home/krissemicolon/Projects/dehashr
-	src
-2
-d/home/krissemicolon/Projects
-	dehashr
-1
-d/home/krissemicolon
-	Projects
-13
-d/home
-	krissemicolon
-1
-d/
-	home
-4
-d/home
-	krissemicolon
-1
-d/home/krissemicolon
-	Applications
-10
-d/home/krissemicolon/Applications
-	..
-0
-d/home/krissemicolon
-	Pictures
-12
 d/home/krissemicolon/Pictures
 	..
 0
@@ -325,7 +122,214 @@ d/home/krissemicolon/Projects
 1
 d/home/krissemicolon
 	.p10k.zsh
+31
+d/home/krissemicolon/Projects/gpkg
+	..
+0
+d/home/krissemicolon/Projects
+	learnC
+3
+d/home/krissemicolon/Projects/learnC
+	..
+0
+d/home/krissemicolon/Projects
+	learnC
+3
+d/home/krissemicolon/Projects/learnC
+	syscalls.c
+2
+d/home/krissemicolon/Projects
+	learnC
+3
+d/home/krissemicolon/Projects/learnC
+	syscalls.c
+2
+d/home/krissemicolon/Projects
+	gpkg
+2
+d/home/krissemicolon/Projects/gpkg
+	gpkg.py
+2
+d/home/krissemicolon/Projects
+	oldhash
+6
+d/home/krissemicolon
+	Projects
+20
+d/home/krissemicolon/Projects
+	learnC
+6
+d/home/krissemicolon/Documents/googleData
+	Chrome
+1
+d/home/krissemicolon/Documents/googleData/Chrome
+	SyncSettings.json
+7
+d/home/krissemicolon/Documents/googleData
+	Contacts
+2
+d/home/krissemicolon/Documents/googleData/Contacts
+	..
+0
+d/home/krissemicolon/Documents/googleData
+	Contacts
+2
+d/home/krissemicolon/Documents/googleData/Contacts
+	All Contacts
+1
+d/home/krissemicolon/Documents/googleData/Contacts/All Contacts
+	All Contacts.vcf
+1
+d/home/krissemicolon/Documents/googleData/Contacts
+	All Contacts
+1
+d/home/krissemicolon/Documents/googleData
+	Drive
+3
+d/home/krissemicolon/Documents/googleData/Drive
+	Getting started.pdf
+1
+d/home/krissemicolon/Documents/googleData
+	Google Account
+4
+d/home/krissemicolon/Documents/googleData/Google Account
+	krissemicolon.SubscriberInfo.html
+1
+d/home/krissemicolon/Documents/googleData
+	Google My Business
+5
+d/home/krissemicolon/Documents/googleData/Google My Business
+	account-103986031751914160396
+1
+d/home/krissemicolon/Documents/googleData
+	Google Pay
+6
+d/home/krissemicolon/Documents/googleData/Google Pay
+	Money sends and requests
+1
+d/home/krissemicolon/Documents/googleData/Google Pay/Money sends and requests
+	Money sends and requests.csv
+1
+d/home/krissemicolon/Documents/googleData/Google Pay
+	Saved items including loyalty _ gift cards
+2
+d/home/krissemicolon/Documents/googleData/Google Pay/Saved items including loyalty _ gift cards
+	Loyalty Gift Cards and Offers.pdf
+1
+d/home/krissemicolon/Documents/googleData/Google Pay
+	Saved items including loyalty _ gift cards
+2
+d/home/krissemicolon/Documents/googleData
+	Google Play Movies _ TV
+7
+d/home/krissemicolon/Documents/googleData/Google Play Movies _ TV
+	..
+0
+d/home/krissemicolon/Documents/googleData
+	Hangouts
+10
+d/home/krissemicolon/Documents/googleData/Hangouts
+	Hangouts.json
+1
+d/home/krissemicolon/Documents/googleData
+	Mail
+13
+d/home/krissemicolon/Documents/googleData/Mail
+	All mail Including Spam and Trash.mbox
+1
+d/home/krissemicolon/Documents/googleData
+	YouTube and YouTube Music
 18
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music
+	history
+1
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music/history
+	watch-history.html
+2
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music
+	my-comments
+2
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music/my-comments
+	my-comments.html
+1
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music
+	my-live-chat-messages
+3
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music/my-live-chat-messages
+	my-live-chat-messages.html
+1
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music
+	playlists
+4
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music/playlists
+	Liked videos.csv
+1
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music
+	subscriptions
+5
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music/subscriptions
+	subscriptions.json
+1
+d/home/krissemicolon/Documents/googleData/YouTube and YouTube Music
+	subscriptions
+5
+d/home/krissemicolon/Documents/googleData
+	Google Workspace Marketplace
+9
+d/home/krissemicolon/Documents
+	googleData
+3
+d/home/krissemicolon
+	.dotfiles
+4
+d/home/krissemicolon/.dotfiles
+	bspwm
+4
+d/home/krissemicolon/.dotfiles/bspwm
+	.config
+1
+d/home/krissemicolon/.dotfiles/bspwm/.config
+	bspwm
+1
+d/home/krissemicolon/.dotfiles/bspwm/.config/bspwm
+	bspwmrc
+1
+d/home/krissemicolon/.dotfiles/alacritty/.config/alacritty
+	alacritty.yml
+1
+d/usr
+	include
+2
+d/usr/include
+	atomic_ops_malloc.h
+21
+d/home/krissemicolon/Projects/dehashr
+	src
+4
+d/home/krissemicolon/Projects/dehashr/lib/sphlib/src/doc
+	api-java
+2
+d/home/krissemicolon/Projects/dehashr
+	src
+3
+d/home/krissemicolon/Applications
+	vscodium
+13
+d/home/krissemicolon/Applications/vscodium
+	..
+0
+d/home/krissemicolon/Applications
+	usr
+12
+d/home/krissemicolon/Applications/usr
+	..
+0
+d/home/krissemicolon/Applications
+	slock-1.4
+10
+d/home/krissemicolon
+	.profile
+16
 d
 
 # Right window history (oldest to newest):
@@ -390,17 +394,28 @@ D
 /.p10
 
 # Prompt history (oldest to newest):
+psyscalls.c
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/root/.local/share/vifm/Trash/000_.config
+""/home/krissemicolon/.local/share/vifm/Trash/000_swiftshader
 
 # Directory stack (oldest to newest):
 
 # Trash content:
 t/root/.local/share/vifm/Trash/000_.config
 	/root/.dotfiles/zsh/.config/.config
+t/home/krissemicolon/.local/share/vifm/Trash/000_tbar.py
+	/home/krissemicolon/Projects/gpkg/tbar.py
+t/home/krissemicolon/.local/share/vifm/Trash/000_a.out
+	/home/krissemicolon/Projects/gpkg/a.out
+t/home/krissemicolon/.local/share/vifm/Trash/000_main.c
+	/home/krissemicolon/Projects/gpkg/main.c
+t/home/krissemicolon/.local/share/vifm/Trash/000_bin
+	/home/krissemicolon/Applications/bin
+t/home/krissemicolon/.local/share/vifm/Trash/000_swiftshader
+	/home/krissemicolon/Applications/swiftshader
 
 # State:
 f

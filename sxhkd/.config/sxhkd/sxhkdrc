@@ -5,13 +5,17 @@
 # terminal emulator
 super + Return
 	alacritty
+super + r
+    st
 
 # program launchers
 #super + @space
 #	dmenu_run
 
 super + @space
-    rofi -show run
+    rofi -show run -theme sidebar
+super + c
+    rofi -show ssh -theme sidebar
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -23,11 +27,15 @@ super + w
 
 # Launch Vim
 super + v
-    vim
+    alacritty -e vim
+
+# Launch File explorer
+super + e
+    pcmanfm
 
 # Lockscreen
 super + q
-    xsecurelock
+    slock
 
 # Screenshot
 Print
@@ -38,20 +46,20 @@ Print
 
 # Audio Volume Control
 XF86AudioLowerVolume
-    amixer -c 0 set Master 1%-
+    amixer -c 0 set Master 2%-
 
 XF86AudioMute
     amixer -c 0 set Master toggle
 
 XF86AudioRaiseVolume
-    amixer -c 0 set Master 1%+
+    amixer -c 0 set Master 2%+
 
 # Brightness Control
 XF86MonBrightnessUp
-    xbacklight -inc 20
+    xbacklight -inc 10
 
 XF86MonBrightnessDown
-    xbacklight -dec 20
+    xbacklight -dec 10
 
 #
 # bspwm hotkeys

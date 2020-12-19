@@ -16,3 +16,10 @@ alias v="vim"
 # Portage
 alias semerge="emerge --search "
 alias makeconf="sudo vim /etc/portage/make.conf"
+
+# Compiling
+alias mk="make; sudo make install"
+
+# Project testing
+alias dh="dehashr -h"
+alias dl="dehashr -l"

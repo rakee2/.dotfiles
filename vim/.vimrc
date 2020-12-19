@@ -51,9 +51,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'https://git::@github.com/ctrlpvim/ctrlp.vim'
 
 " --- Autocompletion 
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'zxqfl/tabnine-vim'
-Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 
 " --- Syntax ---
@@ -80,15 +78,18 @@ Plug 'tpope/vim-commentary'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 
+" --- Discord RP ---
+Plug 'hugolgst/vimsence'
+
 " --- Experimental ---
 Plug 'szw/vim-maximizer'
-Plug 'itchyny/calendar.vim'
 
 " --- Disabled --
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'jiangmiao/auto-pairs'
 " Plug 'lyuts/vim-rtags'
 " Plug 'christoomey/vim-system-copy'
 " Plug 'vimwiki/vimwiki'
-Plug 'hugolgst/vimsence'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
@@ -165,7 +166,7 @@ let g:startify_custom_header = [
 
 " ================ LightLine =================
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'nord',
       \ }
 set laststatus=2
 
@@ -195,7 +196,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 " ================ Terminal ===================
 let g:terminal_key = "<Leader>c"
 let g:terminal_cwd = 1
-let g:terminal_height = 10
+let g:terminal_height = 12
 let g:terminal_pos = "rightbelow"
 let g:terminal_shell = "zsh"
 let g:terminal_edit = "tab drop"
@@ -228,6 +229,6 @@ let g:vimsence_file_explorer_details = 'Looking for files'
 let g:vimsence_custom_icons = {'filetype': 'iconname'}
 
 " ================ Colorscheme =================
-colorscheme gruvbox
+colorscheme nord
 set background=dark
 

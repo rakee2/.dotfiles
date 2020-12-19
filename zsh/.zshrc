@@ -7,7 +7,7 @@ fi
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # History in cache directory:
 HISTSIZE=10000
@@ -92,3 +92,5 @@ zinit light-mode for \
 
 # Variables
 export PATH=/home/krissemicolon/.cargo/bin:$PATH
+export PATH=/home/krissemicolon/Scripts:$PATH
+export PATH=/home/krissemicolon/.local/bin:$PATH
