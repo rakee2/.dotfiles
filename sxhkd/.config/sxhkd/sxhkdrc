@@ -25,10 +25,18 @@ super + Escape
 super + w
 	brave-bin
 
+super + d 
+    brave-bin https://github.com/krissemicolon
+super + a
+    brave-bin https://github.com/krissemicolon?tab=repositories
+
 # Launch Vim
 super + v
     alacritty -e vim
 
+# Launch NetworkManager
+super + n
+    alacritty -n sudo nmtui
 # Launch File explorer
 super + e
     pcmanfm
